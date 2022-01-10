@@ -12,7 +12,10 @@ public class LoginLogout{
 	@Test
 	public void LoginLogoutTest() {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "H:\\DevOps\\chromedriver.exe");	
+		
+		 String currentDir = System.getProperty("user.dir");
+
+		System.setProperty("webdriver.chrome.driver", currentDir + "\\Drivers\\chromedriver.exe");	
 		WebDriver driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
